@@ -1,0 +1,77 @@
+.navbar {
+  background: rgba(15, 23, 42, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 2rem;
+  gap: 2rem;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.brand-icon { font-size: 1.5rem; }
+.brand-text { color: var(--text-primary); }
+.brand-badge {
+  background: var(--gradient-1);
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+.nav-link:hover { color: var(--text-primary); background: rgba(255,255,255,0.05); }
+.nav-link.active { color: var(--primary); background: rgba(16, 185, 129, 0.1); }
+
+.nav-icon { font-size: 1.1rem; }
+
+.wallet-info { display: flex; align-items: center; gap: 0.75rem; }
+.wallet-address {
+  color: var(--primary);
+  text-decoration: none;
+  font-family: monospace;
+  font-size: 0.9rem;
+  padding: 0.4rem 0.8rem;
+  background: rgba(16, 185, 129, 0.1);
+  border-radius: 8px;
+}
+
+.btn-sm { padding: 0.4rem 0.8rem; font-size: 0.85rem; }
+
+@media (max-width: 1024px) {
+  .nav-label { display: none; }
+  .navbar-container { padding: 0.75rem 1rem; }
+}

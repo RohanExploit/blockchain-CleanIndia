@@ -1,0 +1,91 @@
+.analytics-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.chart-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  min-height: 320px;
+}
+
+.fake-chart {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  height: 200px;
+  background: var(--bg-dark);
+  border-radius: var(--radius);
+  padding: 1.5rem 1rem;
+  position: relative;
+  border: 1px solid var(--border);
+}
+
+.bar {
+  width: 50px;
+  border-radius: 6px 6px 0 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+}
+
+.bar span {
+  position: absolute;
+  bottom: -25px;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.plastic { background: var(--gradient-1); }
+.organic { background: var(--gradient-2); }
+.ewaste { background: var(--secondary); }
+
+.line-chart {
+  position: relative;
+}
+
+.point {
+  width: 10px;
+  height: 10px;
+  background: var(--primary);
+  border-radius: 50%;
+  position: absolute;
+  z-index: 2;
+  box-shadow: 0 0 10px var(--primary);
+}
+
+.line-connector {
+  position: absolute;
+  width: 80%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--primary), transparent);
+  bottom: 50%;
+  left: 10%;
+  z-index: 1;
+}
+
+.impact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.impact-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.impact-val {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.impact-lbl {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
