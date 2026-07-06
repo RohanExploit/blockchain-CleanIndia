@@ -1,0 +1,71 @@
+.profile-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.02), rgba(59, 130, 246, 0.02));
+}
+
+.profile-avatar {
+  font-size: 3rem;
+  width: 90px;
+  height: 90px;
+  background: var(--bg-dark);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+}
+
+.profile-info {
+  flex-grow: 1;
+}
+
+.profile-wallet {
+  font-family: monospace;
+  color: var(--text-secondary);
+}
+
+.profile-stats {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.achievement-card {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.achievement-icon {
+  font-size: 2.2rem;
+  background: rgba(255, 255, 255, 0.03);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+.achievement-details h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.achievement-details p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .profile-header { flex-direction: column; text-align: center; gap: 1rem; }
+  .profile-stats { justify-content: center; }
+}
